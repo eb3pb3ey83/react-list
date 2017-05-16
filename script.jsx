@@ -86,10 +86,7 @@ var Todo = React.createClass({
     this.setState({data:data});
   },
   sortNumber:function(a,b){
-      if (a['text2'] > b['text2']) {
-            return 1;
-            //a會排在b後面
-      }
+     return a['text2'] - b['text2'];
   },
   render: function() {
     return (
